@@ -10,7 +10,7 @@ class Command(BaseCommand):
             subject="🔔 Test Email from Django",
             message="If you see this, email is working!",
             from_email=None,  # uses DEFAULT_FROM_EMAIL
-            recipient_list=["snehith.pottluru1212@gmail.com"],
+            recipient_list=["use_your@gmail.com"], #this uses to test gmail notifications
             fail_silently=False,
         )
         self.stdout.write(self.style.SUCCESS("✅ Test email sent!"))
